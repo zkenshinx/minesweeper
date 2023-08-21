@@ -5,11 +5,13 @@
 
 typedef uint8_t layer_t;
 
-#define TILE_EMPTY 0
-#define TILE_MINE 1
+#define BACK_TILE_EMPTY 0
+#define BACK_TILE_MINE 1
 
-#define TILE_AVAILABLE 50
-#define TILE_FLAG 51
+#define FRONT_TILE_AVAILABLE 9
+#define FRONT_TILE_FLAG 10
+#define FRONT_TILE_MINE 11
+#define FRONT_TILE_EXPLODED 12
 
 struct Grid {
 	int width;

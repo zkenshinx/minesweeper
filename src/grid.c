@@ -23,11 +23,11 @@ static void placeMines(layer_t** back_layer, int width, int height, int mine_cou
     for (int i = 0; i < mine_count; ++i) {
         int x = rand() % width;
         int y = rand() % height;
-        while (back_layer[x][y] == TILE_MINE) {
+        while (back_layer[x][y] == BACK_TILE_MINE) {
             x = rand() % width;
             y = rand() % height;
         }
-        back_layer[x][y] = TILE_MINE;
+        back_layer[x][y] = BACK_TILE_MINE;
     }
 }
 

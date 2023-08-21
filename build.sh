@@ -5,4 +5,4 @@ then
 	mkdir bin
 fi
 
-gcc -Wall -Wextra src/main.c src/grid.c -lSDL2 -o bin/minesweeper
+gcc -Wall -Wextra src/main.c src/grid.c src/textures.c -lSDL2 -lSDL2_image -o bin/minesweeper

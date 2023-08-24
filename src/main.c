@@ -55,6 +55,11 @@ int main() {
 		if (SDL_PollEvent(&event)) {
 			if (event.type == SDL_QUIT) {
 				game_finished = true;
+			} else if (event.type == SDL_MOUSEBUTTONDOWN) {
+				int cell_x = event.button.x / GRID_PX;
+				int cell_y = event.button.y / GRID_PX;
+
+				clickGrid(&grid, cell_x, cell_y);
 			}
 		}
 		SDL_RenderClear(renderer);

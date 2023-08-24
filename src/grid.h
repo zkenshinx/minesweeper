@@ -37,4 +37,6 @@ void initRandomGrid(struct Grid* grid, int width, int height, int mine_count);
 */
 void destroyGrid(struct Grid* grid);
 
+void clickGrid(struct Grid* grid, int cell_x, int cell_y);
+
 #endif
